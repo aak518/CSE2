@@ -16,11 +16,11 @@ public class WelcomeClass{
         System.out.println("-----------");
         System.out.println("| WELCOME |");
         System.out.println("-----------");
-        System.out.println("^  ^  ^  ^  ^  ^");
+        System.out.println(" ^  ^  ^  ^  ^  ^");
         System.out.println("/ \\/ \\/ \\/ \\/ \\/ \\");
         System.out.println("<-A--A--K--5--1--8->");
         System.out.println("\\ /\\ /\\ /\\ /\\ /\\ /");
-        System.out.println("v  v  v  v  v  v");
+        System.out.println(" v  v  v  v  v  v");
         System.out.println("Over the summer, I went paintballing, it was really fun!");
     }
 }
