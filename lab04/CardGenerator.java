@@ -11,11 +11,11 @@ public class CardGenerator{
     public static void main(String[] args) {
         
         String cardtype= ""; // set up variable as string
+        String switchnum= ""; // set up variable as string
        
         int num = (int)(Math.random()*(52+1))+1; // random number generator
         int realnum = 0; // set up variable as int
         
-        String switchnum= ""; // set up variable as string
         
         if (num >=40 && num <=52) { // if number is between 40 and 52, then subtract 39 and make it spades
             cardtype = "Spades";
