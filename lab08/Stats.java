@@ -16,7 +16,7 @@ public class Stats{
         
         while(num2<num1){
             System.out.println("Make the numbers increasing");
-            System.out.print("Enter the second number: ");
+            System.out.print("Enter the second number: ");   // if necessary try again
             num2 = myScanner.nextDouble();
         }
         
@@ -25,7 +25,7 @@ public class Stats{
         
         while(num3<num2){
             System.out.println("Make the numbers increasing");
-            System.out.print("Enter the third number: ");
+            System.out.print("Enter the third number: ");     // if necessary try again
             num3 = myScanner.nextDouble();
         }
         
@@ -34,7 +34,7 @@ public class Stats{
         
         while(num4<num3){
             System.out.println("Make the numbers increasing");
-            System.out.print("Enter the fourth number: ");
+            System.out.print("Enter the fourth number: ");     // if necessary try again
             num4 = myScanner.nextDouble();
         }
         
@@ -43,7 +43,7 @@ public class Stats{
         
         while(num5<num4){
             System.out.println("Make the numbers increasing");
-            System.out.print("Enter the fifth number: ");
+            System.out.print("Enter the fifth number: ");      // if necessary try again
             num5 = myScanner.nextDouble();
         }
             mean = (num1+num2+num3+num4+num5)/5; // calculate mean
