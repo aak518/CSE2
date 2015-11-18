@@ -9,10 +9,10 @@ public class Search{
         Scanner myScanner = new Scanner(System.in);
         
         int [] array1;
-        array1 = new int [5000];
+        array1 = new int [50];
         
         int [] array2;
-        array2 = new int [5000];
+        array2 = new int [50];
         
         for (int i=0; i < array1.length; i++){
             int num = (int)(Math.random()*(100000+1))+0;
@@ -45,14 +45,18 @@ public class Search{
             array2[i] = num2;
         }
         }
-        int max2 = array2[4999];
+        int max2 = array2[49];
         int min2 = array2[1];
         System.out.println("The maximum of array2 is: "+ max2);
         System.out.println("The minimum of array2 is: "+ min2);
         
         System.out.print("Enter the number to search for: ");
         int search = myScanner.nextInt();
-        int upperbound = 5000;
+        while(search<min2 || search > max2){
+            System.out.print("Out of bounds, enter again: ");
+            search = myScanner.nextInt();
+        }
+        int upperbound = 50;
         int lowerbound = 0;
         int position = (lowerbound+upperbound)/2; 
         
@@ -65,7 +69,7 @@ public class Search{
             }
             position = (lowerbound +upperbound)/2;
         }
-        int numbefore = array2[position-1];
+        int numbefore = array2[position];
         int numafter = array2[position+1];
         if (lowerbound <= upperbound){
             System.out.println("The number was found");
